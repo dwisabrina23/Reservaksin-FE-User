@@ -1,13 +1,16 @@
-import React from 'react'
-import Navbar from '../../Components/Navbar/Navbar'
+import React from "react";
+import UserAvatar from "../../Components/Profile/UserAvatar";
+import UserMenu from "../../Components/Profile/UserMenu";
+import BackButton from "../../Components/BackButton/BackButton";
 
-function UserProfilePage() {
-    return (
-        <div>
-            <Navbar/>
-            <p>user profile page</p>
-        </div>
-    )
+function UserProfilePage({userid}) {
+  return (
+    <div className="container py-4 page-wrapper">
+      <BackButton title="Profile"/>
+      <UserAvatar />
+      <UserMenu userid={userid} />
+    </div>
+  );
 }
 
-export default UserProfilePage
+export default UserProfilePage;

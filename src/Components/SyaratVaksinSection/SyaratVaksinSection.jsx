@@ -1,6 +1,6 @@
 import React from "react";
 import Illustrations2 from "../../Assets/Images/illustration-2.svg";
-import "./SyaratVaksinSection.scss";
+import "./SyaratVaksinSection.css";
 import data from "./static.json";
 import NoteCard from "Components/NoteCard/NoteCard";
 
@@ -8,7 +8,7 @@ export default function SyaratVaksinSection() {
   return (
     <section className="syarat-vaksin container py-5">
       <div className="d-flex flex-column justify-content-center">
-        <h1>
+        <h1 data-testid="title">
           Syarat Penerima <br /> Vaksin COVID-19
         </h1>
         <p>

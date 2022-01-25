@@ -1,10 +1,11 @@
 import React from "react";
 import Illustrations1 from "../../Assets/Images/illustration-1.svg";
 import { Link } from "react-router-dom";
-import "./HeroSection.scss";
+import "./HeroSection.css";
 import PropTypes from "prop-types";
 
 export default function HeroSection({ isLoggedIn }) {
+
   return (
     <section className="hero-section container gradient-blue py-5 mt-5">
       <div className="d-flex flex-column justify-content-center">
@@ -18,19 +19,35 @@ export default function HeroSection({ isLoggedIn }) {
         </p>
         {isLoggedIn ? (
           <>
-            <Link className="btn btn-outline-light mt-3" to="/reservasi">
+            <Link
+              className="btn btn-outline-light mt-3"
+              to="/reservasi/cek-validasi"
+              data-testid="button-reservasi"
+            >
               Reservasi
             </Link>
-            <Link className="btn btn-outline-light mt-3" to="/profile">
+            <Link
+              className="btn btn-outline-light mt-3"
+              to="/profile"
+              data-testid="button-profile"
+            >
               Profile
             </Link>
           </>
         ) : (
           <>
-            <Link className="btn btn-outline-light mt-3" to="/login">
+            <Link
+              className="btn btn-outline-light mt-3"
+              to="/login"
+              data-testid="button-login"
+            >
               Masuk
             </Link>
-            <Link className="btn btn-outline-light mt-3" to="/register">
+            <Link
+              className="btn btn-outline-light mt-3"
+              to="/register"
+              data-testid="button-register"
+            >
               Daftar
             </Link>
           </>

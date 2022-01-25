@@ -1,9 +1,35 @@
 .page-wrapper {
   max-width: 450px;
-  background-color: "white";
+  background-color: white;
   min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: scroll;
 }
 
-.body {
+.page-wrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
+* {
   font-family: "Roboto", sans-serif;
+}
+
+.RFS-StepperContainer {
+  padding: 24px 0 !important;
+}
+
+.material-icons-outlined {
+  display: block;
+}
+
+.page-wrapper{
+  max-width: 480px;
+  background-color: white;
+  min-height: 100vh;
+}
+.btn-primary{
+  background-color: #0A3E66 !important;
+  border-color: #0A3E66;
+  color: white;
 }

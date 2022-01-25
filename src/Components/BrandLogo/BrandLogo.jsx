@@ -1,9 +1,9 @@
 import React from "react";
-import './brand.css';
+import './Brand.css';
 
 function BrandLogo() {
   return (
-    <div className="d-flex justify-content-center logo-wrapper">
+    <div className="d-flex justify-content-center">
         <svg
       xmlns="http://www.w3.org/2000/svg"
       width="142"
