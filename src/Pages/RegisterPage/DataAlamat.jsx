@@ -82,11 +82,13 @@ function DataAlamat({ nextStep, prevStep, handleInputData, formData }) {
     <div className="container page-wrapper">
       <Stepper
         steps={[
-          { label: "Data Pribadi" },
-          { label: "Alamat" },
-          { label: "Data Keluarga" },
+          { label: "Data Pribadi", completed: true },
+          { label: "Alamat", active: true },
+          { label: "Data Keluarga", active: false },
         ]}
-        activeStep={2}
+        activeStep={1}
+        styleConfig={{ activeBgColor: '#0D5389', completedBgColor: '#031625' }}
+        connectorStateColors={true}
       ></Stepper>
       <form onSubmit={handleSubmit}>
         <Alamat

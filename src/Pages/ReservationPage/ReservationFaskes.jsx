@@ -50,7 +50,7 @@ export default function ReservationFaskes() {
               />
               <p className="mt-3" style={{ color: "#0A508D" }}>
                 Mohon maaf, server sedang dalam perbaikan. Mohon kembali lagi
-                nanti :))
+                nanti 
               </p>
             </div>
           ) : dataFaskes ? (

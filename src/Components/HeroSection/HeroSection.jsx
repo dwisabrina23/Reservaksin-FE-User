@@ -5,6 +5,7 @@ import "./HeroSection.css";
 import PropTypes from "prop-types";
 
 export default function HeroSection({ isLoggedIn }) {
+
   return (
     <section
       className="hero-section container gradient-blue py-5 mt-5"

@@ -12,11 +12,10 @@ import { clearUser } from "Config/Redux/UserSlice";
 function UserMenu({ userID }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
   const onClick = () => {
     dispatch(logout());
-    dispatch(clearUser());
-    navigate("/");
+    dispatch(clearUser())
+    navigate("/")
   };
 
   return (

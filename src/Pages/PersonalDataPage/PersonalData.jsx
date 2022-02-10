@@ -24,7 +24,6 @@ export default function PersonalData() {
   });
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // code your handle functions below ...
   const handleInput = (e) => {
     if (
       e.target.name === "alamat" ||

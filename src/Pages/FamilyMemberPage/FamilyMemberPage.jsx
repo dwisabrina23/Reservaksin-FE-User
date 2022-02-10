@@ -19,7 +19,7 @@ export default function FamilyMemberPage() {
           <span className="visually-hidden">Loading...</span>
         </div>
         <p style={{ fontSize: "1rem", marginTop: "1rem" }}>
-          Mohon tunggu sebentar :))
+          Mohon tunggu sebentar 
         </p>
       </div>
     ),
